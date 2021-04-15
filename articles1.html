@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I2C2SW</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+
+</head>
+<style type="text/css">
+
+
+ol, ul {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.row
+{
+  margin-top: 2cm;
+  margin-right: 0px;
+  margin-bottom: 2cm;
+}
+button
+{
+  width: 100%;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 20px;
+}
+#myappend
+{
+  background-color: #ffffcc;
+  padding: 10px;
+  display: block;
+}
+a:hover
+{
+  cursor: pointer;
+}
+</style>
+<header id="top-head">
+</header>
+  
+  <body onload="myStart()">
+    <div class="navigation">
+    <ul>
+      <center>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li>
+      <div  class="dropdown">
+          <a  class="dropbtn">Foreword</a>
+            <div class="dropdown-content" style="left:0;">
+              <a  href="foreword.html">Correspondent</a>
+              <a href="preface1.html">Principal</a>
+              <a href="preface2.html">Member1</a>
+              <a href="preface3.html">Member2</a>
+            </div>
+      </div>
+      </li> 
+      <li><a href="brochure.html">Brochure</a></li>
+      <li><a id="active1">Articles</a></li>
+      </center>
+    </ul> 
+  </div>
+
+
+
+
+
+    <div class="row">
+      <div class="col-sm-2" >
+        <button class="btn-default">
+          TABLE OF CONTENTS
+        </button><br><br>
+        <button class="btn-default"  onclick="myfunction()">
+          COMMMUNICATION AND NETWORKING
+        </button><br><br>
+        <button class="btn-default" onclick="myfunction2()">
+          IMAGE AND SIGNAL PROCESSING
+        </button><br><br>
+        <button class="btn-default" onclick="myfunction3()">
+          INTELLIGENT COMPUTING
+        </button><br><br>
+        <button class="btn-default" onclick="myfunction4()">
+          EMBEDDED SYSTEMS
+        </button><br><br>  
+        <button class="btn-default" onclick="myfunction5()">
+          VLSI AND NANO TECHNOLOGY
+        </button >                                       
+      </div>
+      <div class="col-sm-3">
+        <div id="myappend">
+          <a id="1" onclick="myfunction1(this.id)"  ></a>  <br><br>
+          <a id="2" onclick="myselectfun2(this.id)"  ></a>   <br><br>
+          <a id="3" onclick="myselectfun3(this.id)"  ></a>   <br><br>
+          <a id="4" onclick="myselectfun4(this.id)"  ></a>   <br><br>
+          <a id="5" onclick="myselectfun5(this.id)"  ></a>  <br><br>
+          <a id="6" onclick="myselectfun6(this.id)"  ></a>   <br><br>
+          <a id="7" onclick="myselectfun7(this.id)"  ></a>   <br><br>
+          <a id="8" onclick="myselectfun8(this.id)"  ></a>   <br><br>
+          <a id="9" onclick="myselectfun9(this.id)"  ></a>  <br><br>
+          <a id="10"  onclick="myselectfun10(this.id)"  ></a> <br><br>
+          <a id="11"  onclick="myselectfun11(this.id)"  ></a> <br><br>
+          <a id="12"  onclick="myselectfun12(this.id)"  ></a> <br><br>
+          <a id="13"  onclick="myselectfun13(this.id)"  ></a> <br><br>
+          <a id="14"  onclick="myselectfun14(this.id)"  ></a> <br><br>
+          <a id="15"  onclick="myselectfun15(this.id)"  ></a> <br><br>
+          <a id="16"  onclick="myselectfun16(this.id)"  ></a> <br><br> 
+          <a id="17"  onclick="myselectfun17(this.id)"  ></a> <br><br>
+          <a id="18"  onclick="myselectfun17(this.id)"  ></a> <br><br>
+          <a id="19"  onclick="myselectfun17(this.id)"  ></a> <br><br>
+          <a id="20"  onclick="myselectfun17(this.id)"  ></a> <br><br> 
+          <a id="21"  onclick="myselectfun17(this.id)"  ></a> <br><br>
+          <a id="22"  onclick="myselectfun17(this.id)"  ></a> <br><br>
+          <a id="23"  onclick="myselectfun17(this.id)"  ></a> <br><br>                                    
+        </div>
+      </div>
+      <div class="col-sm-7 ">
+        <iframe src="" height="1050px" id="myFrame" width="750px"></iframe>
+      </div>     
+    </div>  
+  </body>
+</html>
+<script type="text/javascript">
+  function myStart()
+  {
+    
+    document.getElementById("myappend").style.display="none";
+    document.getElementById("myFrame").src="pdf/TABLE OF CONTENTS.pdf";
+  }
+  function myfunction() 
+  {
+    document.getElementById("myappend").style.display="block";
+    document.getElementById("1").innerHTML="1.A Study on Firewall System, Scheduling and  Routing using Pfsense Scheme";
+    document.getElementById("2").innerHTML="2.An Effective Channel Access Mechanism for Data Transmission in Hetrogeneous Cognitive Radio Sensor Networks";
+    document.getElementById("3").innerHTML="3.A Low Traceback And Zero Logging Overhead IP Traceback Approach for Communication Networks";
+    document.getElementById("4").innerHTML="4.Energy Efficient Cluster Formation in Wireless Sensor Networks Based on Multi Objective Bat Algorithm";
+    document.getElementById("5").innerHTML="5.Sink Originated Unique Algorithm for Clustering and Routing to Forward Aggregated Data in Wireless Sensor Networks";
+    document.getElementById("6").innerHTML="6.Adaptive Modulation for Wireless Sensor Networks";
+    document.getElementById("7").innerHTML="7.Study of Interline Power Flow Controller in Congestion Management of Power System with Flower Pollination Algorithm";
+    document.getElementById("8").innerHTML="8.Detection of Replica Node Attack Based on Exponential moving Average Model in Wireless Sensor Networks"; 
+    document.getElementById("9").innerHTML="9.Performance Analysis Of Non Cooperative Spectrum Sensing Schemes in 5G Cognitive Radio Networks";
+    document.getElementById("10").innerHTML="10.Analysis and Experimental Evaluation of Routing Protocol for Static  and  Mobile Challenging Environment in WSNs";
+    document.getElementById("11").innerHTML="11.Improving TCP's Throughput and Fairness Stability in Vehicular Network";
+    document.getElementById("12").innerHTML="12.Design of UWB High Gain Modified Bowtie Antenna for Radar Applications";
+       document.getElementById("13").innerHTML="13.A Compact Stair Case Monopole UWB Antenna for Radar ";  
+    document.getElementById("14").innerHTML="";
+    document.getElementById("15").innerHTML="";  
+    document.getElementById("16").innerHTML="";  
+    document.getElementById("17").innerHTML="";
+    document.getElementById("18").innerHTML="";  
+    document.getElementById("19").innerHTML=""; 
+    document.getElementById("20").innerHTML="";
+    document.getElementById("21").innerHTML="";  
+    document.getElementById("22").innerHTML=""; 
+    document.getElementById("23").innerHTML="";       
+  }
+  function myfunction1(click_id) 
+  {
+    var a=document.getElementById(click_id).text;
+ 
+             if (a.match("1.A Study on Firewall System, Scheduling and  Routing using Pfsense Scheme"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID003.pdf";
+
+            }
+            else if (a.match("1.A Comparative Study of Secured Medical Images in Cloud Environment"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID068.pdf";
+
+            }
+            else if (a.match("1.Content-Based Image Retrieval Techniques: A Review"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID027.pdf";
+
+            }
+            else if (a.match("1.A Survey on Water Stagnation Detection and Prevention System in Smart Cities"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID020.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID002.pdf";
+
+            }  
+ 
+
+                   
+
+    }           
+  function myselectfun2(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("2.An Effective Channel Access Mechanism for Data Transmission in Hetrogeneous Cognitive Radio Sensor Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID014.pdf";
+
+            }
+            else if (a.match("2.Rule Based Fuzzy Image Segmentation for The Detection Of Breast Cancer From Ultrasound Image"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID079.pdf";
+
+            }
+            else if (a.match("2.Prediction of Passenger Traffic for Global Airport using Holt’s Winter Method in Time Series Analysis"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID045.pdf";
+
+            }
+            else if (a.match("2.Smart Irrigation System using Zigbee Technology and Machine Learning Techniques"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID023.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID006.pdf";
+
+            } 
+   }   
+  function myselectfun3(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("3.A Low Traceback And Zero Logging Overhead IP Traceback Approach for Communication Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID026.pdf";
+
+            }
+            else if (a.match("3.Cardiac Arrhythmia Diagnosis System from Electrocardiogram Signal using Machine Learning Approach"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID091.pdf";
+
+            }
+            else if (a.match("3.A Survey on and Performance Analysis of Load Balancing Algorithms using Meta Heuristics approach in Public Cloud-Service Provider’s Perspective"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID111.pdf";
+
+            }
+            else if (a.match("3.Design and Fabrication of Mobilized Lower Extremity Powered Exoskeleton System"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID024.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID007.pdf";
+
+            } 
+   }  
+
+  function myselectfun4(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("4.Energy Efficient Cluster Formation in Wireless Sensor Networks Based on Multi Objective Bat Algorithm"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID032.pdf";
+
+            }
+            else if (a.match("4.Classification of Cloud/sky Images based on kNN and Modified Genetic Algorithm"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID001.pdf";
+
+            }
+            else if (a.match("4.Improve Efficient Keywords Searching Data Retrieval Process in Cloud Server"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID066.pdf";
+
+            }
+            else if (a.match("4.Industrial Wrapping Machine"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID117.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID009.pdf";
+
+            } 
+   } 
+  function myselectfun5(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("5.Sink Originated Unique Algorithm for Clustering and Routing to Forward Aggregated Data in Wireless Sensor Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID035.pdf";
+
+            }
+            else if (a.match("5.Automatic Brain Tumor Segmentation from MRI Image Using PSO based Clustering Technique"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID010.pdf";
+
+            }
+            else if (a.match("5.ATask Based Resource Scheduling in Cloud"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID077.pdf";
+
+            }
+            else if (a.match("5.Enhancement of Routing Protocol for Low Power Lossy Network for Internet of Things "))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID114.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID034.pdf";
+
+            } 
+   } 
+  function myselectfun6(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("6.Adaptive Modulation for Wireless Sensor Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID051.pdf";
+
+            }
+            else if (a.match("6.A Neuro-Fuzzy Approach for anomaly identification in Brain fMRI using K-Means algorithm"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID013.pdf";
+
+            }
+            else if (a.match("6.Reversible Data Hiding using Spiral Order Technique in Medical Images"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID089.pdf";
+
+            }
+            else if (a.match("6.Multi-Factor Based User Authentication Scheme for Lightweight IoT Devices"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID025.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID041.pdf";
+
+            } 
+   }
+  function myselectfun7(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("7.Study of Interline Power Flow Controller in Congestion Management of Power System with Flower Pollination Algorithm"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID052.pdf";
+
+            }
+            else if (a.match("7.Linear Weighted Multiple Watermarking in  DWT-SVD domain through Covariance Analysis"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID016.pdf";
+
+            }
+            else if (a.match("7.Contemplate Study of Contemporary Techniques for HUIM"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID092.pdf";
+
+            }
+            else if (a.match("7.Design And Implementation of Biometric  based Smart Antitheft Bike Protection System"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID038.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID058.pdf";
+
+            } 
+   }
+   function myselectfun8(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("8.Detection of Replica Node Attack Based on Exponential moving Average Model in Wireless Sensor Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID060.pdf";
+
+            }
+            else if (a.match("8.A Survey on Multimodal Biometrics Authentication and Template Protection"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID021.pdf";
+
+            }
+            else if (a.match("8.Honey Bee Behaviour Inspired Scheduling and Load Balancing of Virtual Machine in Fog Environment"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID101.pdf";
+
+            }
+            else if (a.match("8.Analysis on Behavioural Changes in the Intellectual Disability of the Individuals"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID048.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID064.pdf";
+
+            } 
+   }
+function myselectfun9(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("9.Performance Analysis Of Non Cooperative Spectrum Sensing Schemes in 5G Cognitive Radio Networks"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID087.pdf";
+
+            }
+            else if (a.match("9.Automatic Optic Disc Localization and Optic Cup segmentation from Monocular Color Retinal Images for Glaucoma Assessment"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID031.pdf";
+
+            }
+            else if (a.match("9.A Review on the Impact of Climate Change on Agriculture in India using Big Data Analytics"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID005.pdf";
+
+            }
+            else if (a.match("9.Low Cost Raspberry Pi Oscilloscope"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID059.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID056.pdf";
+
+            } 
+   }
+function myselectfun10(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("10.Analysis and Experimental Evaluation of Routing Protocol for Static  and  Mobile Challenging Environment in WSNs"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID105.pdf";
+
+            }
+            else if (a.match("10.Investigation of Various Speckle Noise Denoising Filters"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID043.pdf";
+
+            }
+            else if (a.match("10.Comparative Analysis on Image Retrieval Technique using Machine Learning"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID039.pdf";
+
+            }
+            else if (a.match("10.Real Time Location Tracking and Health Monitoring of Police Force"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID072.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID074.pdf";
+
+            } 
+   }  
+function myselectfun11(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("11.Improving TCP's Throughput and Fairness Stability in Vehicular Network"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID106.pdf";
+
+            }
+            else if (a.match("11.Finger Knuckle Biometric Authentication using Texture Based Statistical Approach "))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID046.pdf";
+
+            }
+            else if (a.match("11.Diabetes Risk Analysis using IoT and Deep Learning"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID044.pdf";
+
+            }
+            else if (a.match("11.Driver Warning System in Hill Bends"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID075.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID088.pdf";
+
+            } 
+   } 
+function myselectfun12(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("12.Design of UWB High Gain Modified Bowtie Antenna for Radar Applications"))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID103.pdf";
+
+            }
+            else if (a.match("12.Performance Comparison of Adaptive Filters for Speckle Noise Reduction in SAR Images"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID054.pdf";
+
+            }
+            else if (a.match("12.Review on Brain Tumor Segmentation Methods using Convolution Neural Network for MRI Images"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID098.pdf";
+
+            }
+            else if (a.match("12.Autonomous Room Mapping Vehicle"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID086.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID097.pdf";
+
+            } 
+   }
+function myselectfun13(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("13.A Compact Stair Case Monopole UWB Antenna for Radar "))
+            {
+              document.getElementById("myFrame").src="pdf/Communication & Networking/PID104.pdf";
+
+            }
+            else if (a.match("13.An Optimum Image Binarization Technique for Degraded Historical Document Images"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID071.pdf";
+
+            }
+            else if (a.match("13.A Self Induced Warning System for Wild Animal Trespassing using Machine Vision System"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID113.pdf";
+
+            }
+            else if (a.match("13.Portable Communication Aid for Specially Challenged : Conversion of  Hand Gestures into Voice And Vice Versa"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID102.pdf";
+            } 
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/VLSI & Nano Technology/PID100.pdf";
+
+            } 
+   }
+function myselectfun14(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("14.Isolated Offline Tamil Handwritten Character Recognition using Deep Convolutional Neural Network"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID090.pdf";
+
+            }
+            else if (a.match("14.Offline Navigation:GPS based Assisting System in Sathuragiri Forests using Machine Learning"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID107.pdf";
+
+            }
+            else if (a.match("14.Design and Fabrication of LPG Drain Gesture"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID042.pdf";
+
+            }
+            
+             
+   } 
+function myselectfun15(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("15.Certain Investigations on Data Hiding for  Security Applications"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID037.pdf";
+
+            }
+            else if (a.match("15.Comparative Analysis of Feature Selection Methods and Machine Learning Algorithms in Permission based Android Malware Detection"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID022.pdf";
+
+            }
+            else if (a.match("15.A Study of ACO/PSO approaches in Agriculture and Social Network Fields - A Generic Review"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID070.pdf";
+
+            }
+            
+             
+   } 
+function myselectfun16(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+           if (a.match("16.The Survival of Intellectual Disabled Subjects in Social Environment using BCI"))
+            {
+              document.getElementById("myFrame").src="pdf/Image & Signal Processing/PID049.pdf";
+
+            }
+            else if (a.match("16.A Novel Architecture to Improve Performance of Photovoltaic Cells using Lens Let Arrays"))
+            {
+              document.getElementById("myFrame").src="pdf/Embedded Systems/PID033.pdf";
+
+            }
+            else 
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID011.pdf";
+
+            }
+
+            
+             
+   }  
+function myselectfun17(click_id) 
+  {
+        var a=document.getElementById(click_id).text;
+
+            if (a.match("17.Application of  Rough Set Based Reduction for  Network data set"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID047.pdf";
+
+            }
+            else if (a.match("18.Review on Big Data Analytics in Mortality Prediction"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID108.pdf";
+
+            }
+            else if (a.match("19.Stress Prediction to reduce Suicidal Rate in the Society based on Social Media using Machine Learning Approach"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID110.pdf";
+
+            }
+            else if (a.match("20.Wind Power Forecasting in Short-Term using Fuzzy K-Means Clustering and Neural Network"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID109.pdf";
+
+            }
+            else if (a.match("21.Strength prediction using ANN for concrete with Marble and Quarry dust"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID115.pdf";
+
+            }
+            else if (a.match("22.ANN based prediction of Bond and Impact Strength of Light Weight Self Consolidating Concrete with Coconut Shell"))
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID116.pdf";
+
+            }
+            else
+            {
+              document.getElementById("myFrame").src="pdf/Intelligent Computing/PID112.pdf";
+
+            }
+            
+             
+   }                                         
+  function myfunction2() 
+  {
+    document.getElementById("myappend").style.display="block";
+    document.getElementById("1").innerHTML="1.A Comparative Study of Secured Medical Images in Cloud Environment";
+    document.getElementById("2").innerHTML="2.Rule Based Fuzzy Image Segmentation for The Detection Of Breast Cancer From Ultrasound Image";
+    document.getElementById("3").innerHTML="3.Cardiac Arrhythmia Diagnosis System from Electrocardiogram Signal using Machine Learning Approach";
+    document.getElementById("4").innerHTML="4.Classification of Cloud/sky Images based on kNN and Modified Genetic Algorithm";
+    document.getElementById("5").innerHTML="5.Automatic Brain Tumor Segmentation from MRI Image Using PSO based Clustering Technique";
+    document.getElementById("6").innerHTML="6.A Neuro-Fuzzy Approach for anomaly identification in Brain fMRI using K-Means algorithm  ";
+    document.getElementById("7").innerHTML="7.Linear Weighted Multiple Watermarking in  DWT-SVD domain through Covariance Analysis";
+    document.getElementById("8").innerHTML="8.A Survey on Multimodal Biometrics Authentication and Template Protection"; 
+    document.getElementById("9").innerHTML="9.Automatic Optic Disc Localization and Optic Cup segmentation from Monocular Color Retinal Images for Glaucoma Assessment";
+    document.getElementById("10").innerHTML="10.Investigation of Various Speckle Noise Denoising Filters";
+    document.getElementById("11").innerHTML="11.Finger Knuckle Biometric Authentication using Texture Based Statistical Approach ";
+    document.getElementById("12").innerHTML="12.Performance Comparison of Adaptive Filters for Speckle Noise Reduction in SAR Images";
+       document.getElementById("13").innerHTML="13.An Optimum Image Binarization Technique for Degraded Historical Document Images";
+     document.getElementById("14").innerHTML="14.Isolated Offline Tamil Handwritten Character Recognition using Deep Convolutional Neural Network";
+     document.getElementById("15").innerHTML="15.Certain Investigations on Data Hiding for  Security Applications";  
+    document.getElementById("16").innerHTML="16.The Survival of Intellectual Disabled Subjects in Social Environment using BCI"; 
+    document.getElementById("17").innerHTML="";
+    document.getElementById("18").innerHTML="";  
+    document.getElementById("19").innerHTML=""; 
+    document.getElementById("20").innerHTML="";
+    document.getElementById("21").innerHTML="";  
+    document.getElementById("22").innerHTML=""; 
+    document.getElementById("23").innerHTML="";
+    
+
+  }
+  function myfunction3() 
+  {
+    document.getElementById("myappend").style.display="block";
+    document.getElementById("1").innerHTML="1.Content-Based Image Retrieval Techniques: A Review";
+    document.getElementById("2").innerHTML="2.Prediction of Passenger Traffic for Global Airport using Holt’s Winter Method in Time Series Analysis";
+    document.getElementById("3").innerHTML="3.A Survey on and Performance Analysis of Load Balancing Algorithms using Meta Heuristics approach in Public Cloud-Service Provider’s Perspective";
+    document.getElementById("4").innerHTML="4.Improve Efficient Keywords Searching Data Retrieval Process in Cloud Server";
+    document.getElementById("5").innerHTML="5.ATask Based Resource Scheduling in Cloud ";
+    document.getElementById("6").innerHTML="6.Reversible Data Hiding using Spiral Order Technique in Medical Images ";
+    document.getElementById("7").innerHTML="7.Contemplate Study of Contemporary Techniques for HUIM";
+    document.getElementById("8").innerHTML="8.Honey Bee Behaviour Inspired Scheduling and Load Balancing of Virtual Machine in Fog Environment"; 
+    document.getElementById("9").innerHTML="9.A Review on the Impact of Climate Change on Agriculture in India using Big Data Analytics";
+    document.getElementById("10").innerHTML="10.Comparative Analysis on Image Retrieval Technique using Machine Learning";
+    document.getElementById("11").innerHTML="11.Diabetes Risk Analysis using IoT and Deep Learning";
+    document.getElementById("12").innerHTML="12.Review on Brain Tumor Segmentation Methods using Convolution Neural Network for MRI Images";
+       document.getElementById("13").innerHTML="13.A Self Induced Warning System for Wild Animal Trespassing using Machine Vision System";
+     document.getElementById("14").innerHTML="14.Offline Navigation:GPS based Assisting System in Sathuragiri Forests using Machine Learning";
+     document.getElementById("15").innerHTML="15.Comparative Analysis of Feature Selection Methods and Machine Learning Algorithms in Permission based Android Malware Detection";  
+    document.getElementById("16").innerHTML="16.Search for Effective Data Mining Algorithm for Network Based Intrusion Detection(NIDS)- DDoS   Attacks"; 
+        document.getElementById("17").innerHTML="17.Application of  Rough Set Based Reduction for  Network data set";
+    document.getElementById("18").innerHTML="18.Review on Big Data Analytics in Mortality Prediction";
+    document.getElementById("19").innerHTML="19.Stress Prediction to reduce Suicidal Rate in the Society based on Social Media using Machine Learning Approach";
+       document.getElementById("20").innerHTML="20.Wind Power Forecasting in Short-Term using Fuzzy K-Means Clustering and Neural Network";
+     document.getElementById("21").innerHTML="21.Strength prediction using ANN for concrete with Marble and Quarry dust";
+     document.getElementById("22").innerHTML="22.ANN based prediction of Bond and Impact Strength of Light Weight Self Consolidating Concrete with Coconut Shell";  
+    document.getElementById("23").innerHTML="23.Are pregnancy welfare schemes effective? A case study on India"; 
+
+  } 
+  function myfunction4() 
+  {
+    document.getElementById("myappend").style.display="block";
+    document.getElementById("1").innerHTML="1.A Survey on Water Stagnation Detection and Prevention System in Smart Cities";
+    document.getElementById("2").innerHTML="2.Smart Irrigation System using Zigbee Technology and Machine Learning Techniques";
+    document.getElementById("3").innerHTML="3.Design and Fabrication of Mobilized Lower Extremity Powered Exoskeleton System";
+    document.getElementById("4").innerHTML="4.Industrial Wrapping Machine";
+    document.getElementById("5").innerHTML="5.Enhancement of Routing Protocol for Low Power Lossy Network for Internet of Things  ";
+    document.getElementById("6").innerHTML="6.Multi-Factor Based User Authentication Scheme for Lightweight IoT Devices ";
+    document.getElementById("7").innerHTML="7.Design And Implementation of Biometric  based Smart Antitheft Bike Protection System";
+    document.getElementById("8").innerHTML="8.Analysis on Behavioural Changes in the Intellectual Disability of the Individuals"; 
+    document.getElementById("9").innerHTML="9.Low Cost Raspberry Pi Oscilloscope";
+    document.getElementById("10").innerHTML="10.Real Time Location Tracking and Health Monitoring of Police Force";
+    document.getElementById("11").innerHTML="11.Driver Warning System in Hill Bends";
+    document.getElementById("12").innerHTML="12.Autonomous Room Mapping Vehicle";
+    document.getElementById("13").innerHTML="13.Portable Communication Aid for Specially Challenged : Conversion of  Hand Gestures into Voice And Vice Versa";
+    document.getElementById("14").innerHTML="14.Design and Fabrication of LPG Drain Gesture";
+    document.getElementById("15").innerHTML="15.A Study of ACO/PSO approaches in Agriculture and Social Network Fields - A Generic Review";  
+    document.getElementById("16").innerHTML="16.A Novel Architecture to Improve Performance of Photovoltaic Cells using Lens Let Arrays"; 
+    document.getElementById("17").innerHTML="";
+    document.getElementById("18").innerHTML="";
+    document.getElementById("19").innerHTML="";
+    document.getElementById("20").innerHTML="";
+    document.getElementById("21").innerHTML="";
+    document.getElementById("22").innerHTML="";  
+    document.getElementById("23").innerHTML=""; 
+
+  }  
+
+   function myfunction5() 
+  {
+    document.getElementById("myappend").style.display="block";
+    document.getElementById("1").innerHTML="1.Low Latency Scheduling of Point Multiplication Featuring High Speed GF (2m) Multiplier Suitable for FPGA Implementation";
+    document.getElementById("2").innerHTML="2.An Ultra Low Power VLSI Architecture for Viterbi Decoder using Subthreshold Adiabatic Logic";
+    document.getElementById("3").innerHTML="3.Design of Novel SRAM cell using Hybrid  VLSI Techniques for High Computational Speed in Embedded Memories";
+    document.getElementById("4").innerHTML="4.In Depth Survey on SMS4 Architecture";
+    document.getElementById("5").innerHTML="5.Survey on Adaptive Filter Applications";
+    document.getElementById("6").innerHTML="6.Area Efficient Implementation of Adaptive Filters using High Level Transformation ";
+    document.getElementById("7").innerHTML="7.2D Lifting Based Discrete Wavelet Transform Architecture based on Sub Expression Reduction Technique";
+    document.getElementById("8").innerHTML="8.2D Lifting Based Discrete Wavelet Transform Architecture using  Modified Reduced Hardware Algorithm "; 
+    document.getElementById("9").innerHTML="9.A Novel Ternary Half Adder & One Bit Multiplier Circuits based on Emerging sub-32nm FET Technology ";
+    document.getElementById("10").innerHTML="10.Effects of Microwave Annealing of Graphene and its impact on Structural, Electrochemical performance for Energy Storage";
+    document.getElementById("11").innerHTML="11.Automatic Solar Powdered Grass Cutter Incorporated with Alphabet Printing And Pesticide Sprayer";
+    document.getElementById("12").innerHTML="12.Area and Power Efficient Approximate Wallace Tree Multiplier using 4:2 Compressors   ";
+    document.getElementById("13").innerHTML="13.An improved transformerless inverter topology for grid connected photovoltaic system ";
+    document.getElementById("14").innerHTML="";
+    document.getElementById("15").innerHTML="";  
+    document.getElementById("16").innerHTML=""; 
+    document.getElementById("17").innerHTML="";
+    document.getElementById("18").innerHTML="";
+    document.getElementById("19").innerHTML="";
+    document.getElementById("20").innerHTML="";
+    document.getElementById("21").innerHTML="";
+    document.getElementById("22").innerHTML="";  
+    document.getElementById("23").innerHTML=""; 
+
+  }  
+</script>
